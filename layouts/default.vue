@@ -30,7 +30,7 @@
       fixed
       app
       style="
-        background-image: url(https://i.pinimg.com/originals/ed/36/70/ed3670dd33f56f1fe312669538d52c9c.jpg);
+        background-image: url(https://c7.uihere.com/files/858/688/854/5cb92361463e1.jpg);
       "
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
@@ -69,24 +69,16 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'ARAYA TARIN',
+          title: '𝓐𝓡𝓐𝓨𝓐 𝓣𝓐𝓡𝓘𝓝',
           to: '/',
         },
         {
-          icon: 'mdi-owl',
-          title: 'Inspire',
+          title: '𝓘𝓷𝓼𝓹𝓲𝓻𝓮',
           to: '/inspire',
         },
         {
-          icon: 'mdi-language-go',
-          title: 'Profile',
-          to: '/Profile',
-        },
-        {
-          icon: 'mdi-shopping',
-          title: 'Shop',
-          to: '/Shop',
+          title: '𝓖𝓘𝓕𝓼',
+          to: '/indexs',
         },
       ],
       miniVariant: false,

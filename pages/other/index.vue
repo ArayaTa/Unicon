@@ -6,7 +6,7 @@
       }}
       <nuxt-link
         :to="{
-          name: 'detail-index',
+          name: 'detail-indexs',
           params: { id: i },
         }"
       ></nuxt-link>

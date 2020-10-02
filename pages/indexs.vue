@@ -44,16 +44,13 @@
           style="max-width: 100%"
         ></video>
         <v-btn
-          :href="data.url"
-          outlined
-          color="indigo"
+          color="#BCAAA4"
           nuxt
           :to="{
             name: 'detail-id',
             params: {
               id: data.id,
               title: data.title,
-              rating: data.rating,
               import_datetime: data.import_datetime,
               type: data.type,
               video: data.images.original.mp4,
@@ -63,6 +60,7 @@
           }"
           >👉𝓖𝓞 𝓣𝓞 𝓛𝓘𝓝𝓚👈</v-btn
         >
+        <p><br /></p>
       </v-card>
     </div>
   </div>
@@ -82,7 +80,7 @@ export default {
         .get(
           'https://api.giphy.com/v1/gifs/search?api_key=39vI8skUqOzHnLMOJZiRkLKJ7SIWbQ4J&q=' +
             this.keyword +
-            '&limit=30&rating=g'
+            '&limit=30'
         )
         .then((response) => {
           this.resultData = response.data.data
@@ -95,3 +93,13 @@ export default {
   },
 }
 </script>
+<style>
+#app {
+  background-image: url(https://i.pinimg.com/originals/35/f2/a5/35f2a54da02f0cefb0bc6e13b6c8f310.jpg);
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin-top: 60px;
+}
+</style>
